@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #222;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 500px;
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.header {
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  color: #1a73e8;
+}
+
+.header p {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.card {
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 1rem;
+}
+
+.form-alta h3 {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  color: #334155;
+}
+
+input {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  outline: none;
+}
+
+input:focus {
+  border-color: #1a73e8;
+}
+
+.fila-inputs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-primario {
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.buscador-card {
+  display: flex;
+  align-items: center;
+  background: #f1f5f9;
+  border-radius: 6px;
+  padding: 0 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.buscador-card input {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding-left: 0.5rem;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.item-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+}
+
+.item-nombre {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.item-precio {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.edicion-box {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.2rem;
+}
+
+.edicion-box input {
+  width: 90px;
+  padding: 0.2rem 0.4rem;
+  margin: 0;
+}
+
+.item-acciones {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.btn-icono {
+  background: none;
+  border: 1px solid transparent;
+  padding: 0.4rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-azul { color: #1a73e8; background: #eff6ff; }
+.btn-rojo { color: #dc2626; background: #fef2f2; }
+.btn-verde { color: #16a34a; background: #f0fdf4; }
+.btn-gris { color: #64748b; background: #f1f5f9; }
+
+.centrado {
+  text-align: center;
+  color: #64748b;
+  margin-top: 2rem;
+}
