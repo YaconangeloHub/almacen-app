@@ -10,12 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping a Supabase
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
         run: |
-          URL="${SUPABASE_URL}/rest/v1/productos?select=id&limit=1"
-          echo "Haciendo ping..."
-          curl -s -i "$URL" \
-            -H "apikey: $SUPABASE_ANON_KEY" \
-            -H "Authorization: Bearer $SUPABASE_ANON_KEY"
+          curl -s -i "https://ebgmjcfobcngdfwlptwe.supabase.co/rest/v1/productos?select=id&limit=1" \
+            -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}"
